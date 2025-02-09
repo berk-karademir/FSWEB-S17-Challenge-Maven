@@ -82,7 +82,7 @@ class MainTest {
 
     @Test
     void testCreateCourseValidationFailure() throws Exception {
-        Course invalidCourse = new Course(null, null, null, null); // Assuming this will fail validation
+        Course invalidCourse = new Course(null, null,  null, null); // Assuming this will fail validation
 
         mockMvc.perform(post("/courses")
                         .contentType(MediaType.APPLICATION_JSON)
